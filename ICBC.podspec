@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
 
 
    spec.name         = "ICBC"
-   spec.version      = "0.0.1"
+   spec.version      = "0.1.1"
    spec.summary      = "工行e支付SDK"
    spec.description  = "工行e支付SDK，包含微信支付SDK、支付宝支付"
    spec.homepage     = "https://github.com/LessYellowFish/ICBCPAY"
