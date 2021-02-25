@@ -32,7 +32,7 @@ Pod::Spec.new do |spec|
    spec.dependency 'WechatOpenSDK'
    spec.requires_arc = true
 
-  spec.source       = { :git => "https://github.com/LessYellowFish/ICBCPAY.git", :commit => "92583aa11354fa9694cadafa709a011d768ee305" }
+  spec.source       = { :git => "https://github.com/LessYellowFish/ICBCPAY.git", :commit => "92583aa11354fa9694cadafa709a011d768ee305" :tag => "#{spec.version}"}
 
 
 end
