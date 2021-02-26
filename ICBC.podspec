@@ -17,13 +17,8 @@ Pod::Spec.new do |spec|
    spec.homepage     = "https://github.com/LessYellowFish/ICBCPAY"
    spec.license      = "LICENSE"
    spec.author             = { "19920715zza" => "2601958675@qq.com" }
- #  spec.source       = { :git => "https://github.com/LessYellowFish/ICBCPAY.git", :commit => "0199e37f9aed24804ce308d2401cae0bc5503bfd" }
- #  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
- #  spec.exclude_files = "Classes/Exclude"
    spec.platform     = :ios, "9.0"
-#  spec.source       = { :git => "", :tag => "#{spec.version}" }
    spec.frameworks       = 'SystemConfiguration', 'CoreMotion','CFNetwork', 'CoreTelephony', 'QuartzCore', 'CoreText', 'CoreGraphics', 'UIKit', 'Foundation'
-   #  spec.libraries        = 'z', 'c++', 'sqlite3'
    spec.vendored_frameworks = ["ICBCPaySDK.framework"]
    spec.resources    = 'Resources/ICBCPaySDK.bundle'
    spec.dependency     'Toast', '~> 4.0.0'
@@ -31,8 +26,9 @@ Pod::Spec.new do |spec|
    spec.dependency 'AlipaySDK-iOS', '~> 15.6.8'
    spec.dependency 'WechatOpenSDK'
    spec.requires_arc = true
-
+   spec.static_framework = true
   spec.source       = { :git => "https://github.com/LessYellowFish/ICBCPAY.git", :tag => "#{spec.version}"}
-
+    spec.public_header_files = 'Classes/ICBCHeader.h'
+  spec.ios.source_files  = "Classes/**/*.{h,m}"
 
 end
