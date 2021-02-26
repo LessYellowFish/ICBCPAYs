@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
    spec.description  = "工行e支付SDK，包含微信支付SDK、支付宝支付"
    spec.homepage     = "https://github.com/LessYellowFish/ICBCPAY"
    spec.license      = "LICENSE"
-#   spec.author             = { "19920715zza" => "2601958675@qq.com" }
+   spec.author             = { "Lewis" => "2601958675@qq.com" }
    spec.platform     = :ios, "9.0"
    spec.frameworks       = 'SystemConfiguration', 'CoreMotion','CFNetwork', 'CoreTelephony', 'QuartzCore', 'CoreText', 'CoreGraphics', 'UIKit', 'Foundation'
    spec.vendored_frameworks = ["ICBCPaySDK.framework"]
