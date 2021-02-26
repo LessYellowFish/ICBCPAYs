@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
    spec.homepage     = "https://github.com/LessYellowFish/ICBCPAY"
    spec.license      = "LICENSE"
    spec.author             = { "Lewis" => "2601958675@qq.com" }
-   spec.platform     = :ios, "9.0"
+   spec.platform     = :ios, "8.0"
    spec.frameworks       = 'SystemConfiguration', 'CoreMotion','CFNetwork', 'CoreTelephony', 'QuartzCore', 'CoreText', 'CoreGraphics', 'UIKit', 'Foundation'
    spec.vendored_frameworks = ["ICBCPaySDK.framework"]
    spec.resources    = 'Resources/ICBCPaySDK.bundle'
